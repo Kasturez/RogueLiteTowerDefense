@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5976139233549294290
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5976139233549294284}
+  - component: {fileID: 5976139233549294285}
+  m_Layer: 0
+  m_Name: Resource Spawn Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5976139233549294284
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5976139233549294290}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5976139233549294285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5976139233549294290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6710334fd491d0d43bd00576506445f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilemap: {fileID: 0}
+  tileGrass: {fileID: 11400000, guid: 4060e096a0fed3c44b9107e7a86cd9bc, type: 2}
+  tileWater: {fileID: 11400000, guid: 250c4c73f986b9f4b804f4d2fff15825, type: 2}
+  width: 200
+  height: 200
+  scale: 5
+  seed: 0
+  resourceList:
+  - {fileID: 4881739252290233992, guid: 6a6221cb8b1aa4c488b465fdaeae2c82, type: 3}
+  - {fileID: 6318663023785507000, guid: afc8d7630d59a404b92e827da2f279a4, type: 3}
+  - {fileID: 578586633296109954, guid: 01edd4faf6c43fd4ab7d0774f626b0c7, type: 3}
+  - {fileID: 7491168827010398678, guid: 7f31c198515f2624a957107efa71cf29, type: 3}
+  - {fileID: 7554662205165929078, guid: d8b137fab211efc469b797979c704211, type: 3}
+  - {fileID: 4036040122677512509, guid: 6b67c8e7e18e9ab4ea4f8e9dcd641936, type: 3}
+  minSpacing: 10
+  maxSpacing: 25
+  clumpThreshold: 0.7
+  spawnRate: 50
