@@ -5,6 +5,8 @@ public class Item : ScriptableObject
 {
     new public string name = "New Item";
     public Sprite icon = null;
+    public int amount = 1;
+    public int maxStack;
     public virtual void Use()
     {
         Debug.Log("using " + name);

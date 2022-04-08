@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 37df093d2ec3fda4b86fff95d171457b
+guid: 34ad500527be5e24e93aa7a01573c939
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -96886312317189215
-    second: RemoveButtont 1_0
+      213: 6231319397455131855
+    second: InventorySlot 1_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -106,22 +106,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: RemoveButtont 1_0
+      name: InventorySlot 1_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 73
-        width: 7
-        height: 7
+        x: 13
+        y: 54
+        width: 18
+        height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 1, z: 1, w: 1}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a38cba896ac7aef0800000000000000
-      internalID: -96886312317189215
+      spriteID: fc4705f1af71a7650800000000000000
+      internalID: 6231319397455131855
       vertices: []
       indices: 
       edges: []

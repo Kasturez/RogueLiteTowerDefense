@@ -27,6 +27,6 @@ public class DayNightCycle : MonoBehaviour
             return;
         }
         globalLight.intensity = 1;
-        globalLight.color = new Color32(255, 251, 160, 255);
+        globalLight.color = new Color32(160, 251, 255, 255);
     }
 }

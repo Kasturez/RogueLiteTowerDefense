@@ -43,6 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6710334fd491d0d43bd00576506445f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   tilemap: {fileID: 0}
   tileGrass: {fileID: 11400000, guid: 4060e096a0fed3c44b9107e7a86cd9bc, type: 2}
   tileWater: {fileID: 11400000, guid: 250c4c73f986b9f4b804f4d2fff15825, type: 2}
@@ -57,7 +58,15 @@ MonoBehaviour:
   - {fileID: 7491168827010398678, guid: 7f31c198515f2624a957107efa71cf29, type: 3}
   - {fileID: 7554662205165929078, guid: d8b137fab211efc469b797979c704211, type: 3}
   - {fileID: 4036040122677512509, guid: 6b67c8e7e18e9ab4ea4f8e9dcd641936, type: 3}
-  minSpacing: 10
-  maxSpacing: 25
-  clumpThreshold: 0.7
+  - {fileID: 515673978179238446, guid: 52a00c2d3cab61d489ec34e01e1fd962, type: 3}
+  - {fileID: 6814081594386217860, guid: 62caabdf2243be24f8c014834eae275e, type: 3}
+  - {fileID: 678004768593830834, guid: 39560cf1dc6bb6147a6a3b2636b2ca31, type: 3}
+  grassAndPebble:
+  - {fileID: 2478819375177591585, guid: 3e96155b7f5c1e94683b43e446f8567c, type: 3}
+  - {fileID: 8779997193921493228, guid: 6d2886019061b5e4ca779f55bfa68a9d, type: 3}
+  - {fileID: 7483977764479863082, guid: b24e7f03a52bfa14a86c59fd5570779d, type: 3}
+  - {fileID: 6339351134094895502, guid: 7fdf9d6a1472c0f43b11dbbf241e9cfe, type: 3}
+  minSpacing: 2
+  maxSpacing: 6
+  clumpThreshold: 0.6
   spawnRate: 50

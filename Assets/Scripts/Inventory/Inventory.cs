@@ -18,30 +18,31 @@ public class Inventory : MonoBehaviour
     #endregion
     public delegate void OnItemChanged();
     public OnItemChanged onItemChangedCallBack;
-    public List<ItemStack> itemStacks = new List<ItemStack>();
+    public List<Item> items = new List<Item>();
     public void addItem(Item itemPickUp)
     {
+        Item copyItem = Instantiate(itemPickUp);
         //search for all itemStack
-        foreach (ItemStack itemStack in itemStacks)
+        foreach (Item item in items)
         {
             //itemStack item name match item pick up name & amount of item Stack is 64 or below
-            if (itemStack.item.name.Equals(itemPickUp.name) && itemStack.amount < 65)
+            if (item.name.Equals(itemPickUp.name) && item.amount < item.maxStack)
             {
-                itemStack.amount += 1;
+                item.amount += 1; 
                 if (onItemChangedCallBack != null)
                     onItemChangedCallBack.Invoke();
                 return;
             }
         }
         //else create new itemStack with that item and amount 1
-        itemStacks.Add(new ItemStack(itemPickUp));
+        items.Add(copyItem);
 
         if (onItemChangedCallBack != null)
             onItemChangedCallBack.Invoke();
     }
-    public void remove(ItemStack itemStack)
+    public void remove(Item item)
     {
-        itemStacks.Remove(itemStack);
+        items.Remove(item);
         if (onItemChangedCallBack != null)
             onItemChangedCallBack.Invoke();
     }

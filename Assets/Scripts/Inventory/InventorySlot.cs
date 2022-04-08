@@ -6,29 +6,30 @@ using UnityEngine.UI;
 public class InventorySlot : MonoBehaviour
 {
     public Image icon;
-    ItemStack itemStack;
+    Item item;
     public Text text;
     public Button removeButton;
 
-    public void AddItem(ItemStack newItemStack)
+    public void AddItem(Item newItem)
     {
-        itemStack = newItemStack;
+        item = newItem;
 
         //set the icon within the slot to show the item icon
-        icon.sprite = itemStack.item.icon;
+        icon.sprite = item.icon;
         icon.enabled = true;
+        icon.SetNativeSize();
 
         //enable remove button
         removeButton.interactable = true;
 
         //show amount of item up to 64
-        text.text = itemStack.amount.ToString();
+        text.text = item.amount.ToString();
         text.enabled = true;
     }
 
     public void ClearSlot()
     {
-        itemStack = null;
+        item = null;
 
         //clear item sprite, make the slot clear
         icon.sprite = null;
@@ -43,14 +44,14 @@ public class InventorySlot : MonoBehaviour
 
     public void OnRemoveButton()
     {
-        Inventory.instance.remove(itemStack);
+        Inventory.instance.remove(item);
     }
 
     public void UseItem()
     {
-        if  (itemStack != null)
+        if  (item != null)
         {
-            itemStack.item.Use();
+            item.Use();
         }
     }
 }

@@ -160,6 +160,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8078639125100378605}
   - component: {fileID: 6841020355832681418}
+  - component: {fileID: 1346796363}
+  - component: {fileID: 1346796364}
   m_Layer: 5
   m_Name: Healthbar
   m_TagString: Untagged
@@ -241,6 +243,34 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1346796363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8078639125100378606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79142a4dd0ce37f48a7a910c4e2d49d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 6841020355832681418}
+--- !u!114 &1346796364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8078639125100378606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55bba6f5e80799643b822149593b88a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerStat: {fileID: 0}
+  heatlhText: {fileID: 8078639125635493996}
+  healthBar: {fileID: 1346796363}
 --- !u!1 &8078639125492995138
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,7 +357,6 @@ GameObject:
   - component: {fileID: 8078639125635493997}
   - component: {fileID: 8078639125635493995}
   - component: {fileID: 8078639125635493996}
-  - component: {fileID: 8078639125635493994}
   m_Layer: 5
   m_Name: TextHealth
   m_TagString: Untagged
@@ -395,18 +424,4 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Health
---- !u!114 &8078639125635493994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8078639125635493998}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55bba6f5e80799643b822149593b88a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stats: {fileID: 0}
-  heatlhText: {fileID: 8078639125635493996}
+  m_Text: 

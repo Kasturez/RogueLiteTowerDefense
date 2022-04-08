@@ -5,17 +5,14 @@ using UnityEngine.UI;
 
 public class HealthDisplay : MonoBehaviour
 {
-    public Stats stats;
+    public CharacterStat playerStat;
     public Text heatlhText;
     public HealthBar healthBar;
     private void Start() {
-        healthBar.SetMaxHealth(stats.maxHP);
+        healthBar.SetMaxHealth(playerStat.currentHealth);
     }
     private void Update() {
-        healthBar.SetHealth(stats.HP);
-        heatlhText.text = stats.HP + " / " + stats.maxHP;
-        if(Input.GetKeyDown(KeyCode.Space)){
-            stats.HP--;
-        }
+        healthBar.SetHealth(playerStat.currentHealth);
+        heatlhText.text = playerStat.currentHealth + " / " + playerStat.maxHealth;
     }
 }
